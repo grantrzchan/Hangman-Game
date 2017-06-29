@@ -1,0 +1,28 @@
+
+Continue to create array of underscores
+
+Create WordsUsed array
+Create var LifesRemain = 10
+
+If LifesRemain > 0
+
+		If Keypress event does not reflect letter in word
+		Add letter to WordsUsed
+		LifesRemain -1		
+
+		Else
+		Swap out underscore by using index.
+	
+		End
+
+	Use join to turn underscores into string
+
+	Print string and update
+
+Else
+
+Display "Game Over"
+resetlock = false;
+
+Exit onkeyup(event)
+

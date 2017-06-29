@@ -1,0 +1,53 @@
+h1{
+	font-family: 'Permanent Marker', cursive;
+	font-size: 100px;
+
+}
+
+h2{
+	font-family: 'Permanent Marker', cursive;
+	font-size: 30px;
+	text-align: center;
+}
+
+#hangmanpic{
+	height: 200px;
+	width: 400px;
+	margin-left: 50px;
+}
+
+ul{list-style: none;
+
+}
+
+#mainsection{
+	margin-top: 20px;
+	column-width: 800px;
+	/*padding-right: 300px;*/
+	height: 400px;
+	border-style: solid;
+	border-color: black; 
+	background: white;
+	text-align: center;
+	font-family: 'Permanent Marker', cursive;
+	font-size: 30px;
+}
+
+#mainpage{
+	padding-top: 185px;
+	padding-bottom: 185px;
+	width: 95%;
+	position: absolute;
+}
+
+#catpage{
+	padding-top: 160px;
+	padding-bottom: 160px;
+	width: 95%;
+	position: absolute;
+}
+
+body {
+    background-image: url("assets/road.jpg");
+    background-repeat: no-repeat;
+}
