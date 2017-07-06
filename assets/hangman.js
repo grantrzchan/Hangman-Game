@@ -5,7 +5,9 @@ var catText = document.getElementById("catpage");
 var gameText = document.getElementById("gamepage");
 var choice1 = document.getElementById("CarsSelection1");
 
-cars1 = ["LaFerrari","Koenigsegg Agera","Bugatti Chiron", "Porsche Carrera", "Ford GT", "McLaren Spider", "Nissan GTR", "Mercedes Benz AMG GT", "Lamborghini Aventador", "Aston Martin DB"];
+var cars1 = ["LaFerrari","Koenigsegg Agera","Bugatti Chiron", "Porsche Carrera", "Ford GT", "McLaren Spider", "Nissan GTR", "Mercedes Benz AMG GT", "Lamborghini Aventador", "Aston Martin DB"];
+
+var alphabetSoup = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 
 hints1 = ["Famous Italian manufacturer well recognized by its horse sigil.",
 "Swedish manufacturer fit for a king.", "French manufacturer now owned by Volkswagen AG",
@@ -21,37 +23,30 @@ var resetlock = true;
 onKeyText.style.visibility = "hidden"; 
 catText.style.visibility = "visible";
 
-while(resetlock === true){
-// var category1 = document.createElement("div");
-// category1.innerHTML = "Super Cars";
-// onKeyText.appendChild(category1);
+    if(resetlock === true ){
 
-function gameDie() {
-    document.getElementById("CarsSelection1").addEventListener("click", function(){
-    var die = Math.floor(Math.random()*9);
-    console.log(die);
-});
-    return die
-};
+            document.getElementById("CarsSelection1").addEventListener("click", function(){
+            var die = Math.floor(Math.random()*9);
+            catText.style.visibility = "hidden";
+            gameText.style.visibility = "visible";
+            var gameCar = cars1[die];
+            var gameHint = hints1[die];
+            document.getElementById("hintstext").innerHTML = gameHint;
+            roundprops = [gameCar, gameHint];
+            });
 
-function carChooser(die){
-    var gameCar = cars1[die];
-    var gameHint = hints1[die];
-// Modify hint text based on car choice
-document.getElementById("hintstext").innerHTML = gameHint;
-    return gameCar
-};
+            console.log(roundprops);
+             var gamewordlength = roundprops[0].length;
+            var wordarray = [];
+            for(i=0; i<gamewordlength;i++){
+                blank = "_";
+                wordarray.push(blank);
+            };
 
+            console.log(wordarray);
+            var test = join(wordarray);
+            document.getElementById("blanks").innerHTML = test;
 
-
-
-    var gamewordlength = gameCar.length;
-    console.log(gamewordlength)
-    var wordarray = [];
-    for(i=0; i<gamewordlength;i++){
-        wordarray[i] = "_";
     };
-
-};
 
 };
