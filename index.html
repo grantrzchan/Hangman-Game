@@ -16,7 +16,6 @@
 <body>
 
 <div class="container">
-	<h1>Hello</h1>
 	<div class="row">
 			<div class="col-md-2">
 			</div>
@@ -25,7 +24,7 @@
 				<h1>Hangman</h1>
 				<h2> Cars Edition!</h2>
 			</div>
-			<img src="assets/hangmandefault.jpg" alt="Poor Hangman ):" class="col-md-3" id="hangmanpic">
+			<img src="assets/hangmandefault.png" alt="Poor Hangman ):" class="col-md-3" id="hangmanpic">
 
 
 			<div class="col-md-2">
@@ -45,20 +44,25 @@
 			</ul>
 
 			<ul id="gamepage">
-			<li id="hintstext">Hints here</li>
+			<li class="gameObjects" id="hintstext">Hints here</li>
 			<li></li>
-			<li></li>
+			<!--<li></li>-->
 			<br>
-			<li id="alphabet">Alphabet here</li>			
+			<div class="gameObjects" id="alphabet"></div>			
+			 <br> 
+			<div class="gameObjects" id="blanks"></div>			
 			<li></li>
-			<li></li>
-			<!-- <br> -->
-			<li id="blanks">Blanks here</li>			
-			<li></li>
-			<li></li>
+			<!--<li></li>-->
 			<br>
-			<li id="livestext">Lives</li>
-			<li id="lives">10</li>
+			<span id="livestext">Lives: </span>
+			<span id="lives">10</span>
+			</ul>
+
+			<ul id="overpage">
+				<li id="overtext">Game Over!</li>
+				<br>
+				<span id="menu" class="overselection">Main Menu</span>
+				<span id="try" class="overselection">Try Again</span>
 			</ul>
 
 			</section>

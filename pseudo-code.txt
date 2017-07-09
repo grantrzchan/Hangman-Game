@@ -24,5 +24,11 @@ Else
 Display "Game Over"
 resetlock = false;
 
+Add functionality that moves on to the next round
+
+Add Try Again functionality
+
+Add return to Main Menu functionality
+
 Exit onkeyup(event)
 
